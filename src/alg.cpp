@@ -1,12 +1,9 @@
 // Copyright 2021 NNTU-CS
-int countPairs1(int *arr, int len, int value) {
-  return 0;
 #include <alg.h>
 #include <iostream>
 #include <cstdint>
-
-int countPairs1(int *arr, int len, int value) {
- int count = 0;
+int countPairs1(int arr, int len, int value) {
+    int count = 0;
     for (int i = 0; i < (len - 1); i++) {
         for (int j = i + 1; j < len; j++) {
             if ((arr[i] + arr[j]) == value) {
@@ -17,44 +14,36 @@ int countPairs1(int *arr, int len, int value) {
     if (count > (0)) {
         return count;
     }
-  return 0;
+    return 0;
 }
-
-int countPairs2(int *arr, int len, int value) {
-  return 0;
-
-int countPairs2(int* arr, int len, int value) {
-    int count = 0, m = 0, j = 0;
+int countPairs2(int arr, int len, int value) {
+    int count = 0, m = 0, p = 0;
     for (int i = 0; i < (len - 1); i++) {
-        if ((arr[i] + arr[i + 1]) >= value) {
+        if ((arri + arri + 1) >= value) {
             m = i;
             break;
         }
     }
     for (int i = 0; i < (len - 1); i++) {
-        if (arr[i] > value) {
+        if (arri > value) {
             break;
         }
         if (m <= i) {
-            j = i + 1;
+            p = i + 1;
         } else {
-            j = m;
+            p = m;
         }
-        for (; j < len; j++) {
-            if ((arr[i] + arr[j]) == value) {
+        for (; p < len; p++) {
+            if ((arri + arrp) == value) {
                 count++;
             }
-            if (arr[j] > value) {
+            if (arrp > value) {
                 break;
             }
         }
     }
     return count;
 }
-
-int countPairs3(int *arr, int len, int value) {
-  return 0;
-
 int countPairs3(int* arr, int len, int value) {
     int count = 0, p = 0, min = 0, max = len;
     for (int i = 0; i < (len - 1); i++) {
@@ -116,4 +105,3 @@ int countPairs3(int* arr, int len, int value) {
     }
     return count;
 }
-
