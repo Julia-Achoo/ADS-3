@@ -19,7 +19,7 @@ int countPairs1(int* arr, int len, int value) {
     return 0;
 }
 int countPairs2(int *arr, int len, int value) {
-  return 0;
+    return 0;
 int countPairs2(int* arr, int len, int value) {
     int count = 0, m = 0, p = 0;
     for (int i = 0; i < (len - 1); i++) {
@@ -49,7 +49,7 @@ int countPairs2(int* arr, int len, int value) {
     return count;
 }
 int countPairs3(int *arr, int len, int value) {
-  return 0;
+    return 0;
 int countPairs3(int* arr, int len, int value) {
     int count = 0, p = 0, min = 0, max = len;
     for (int i = 0; i < (len - 1); i++) {
